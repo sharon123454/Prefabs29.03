@@ -1,0 +1,20 @@
+
+NOSE.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Moustache
+  rotate: true
+  xy: 663, 2
+  size: 975, 512
+  orig: 975, 512
+  offset: 0, 0
+  index: -1
+Nose
+  rotate: false
+  xy: 2, 204
+  size: 659, 773
+  orig: 660, 773
+  offset: 1, 0
+  index: -1
