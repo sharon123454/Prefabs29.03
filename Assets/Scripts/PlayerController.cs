@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     {
         moveDir = new Vector3(horizontalInput, 0);
         Debug.Log(moveDir);
-        transform.position += moveDir;
+        transform.position += moveDir * speed * Time.deltaTime;
     }
 
     void PlayerInput()
