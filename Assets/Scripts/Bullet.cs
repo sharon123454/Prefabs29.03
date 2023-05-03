@@ -13,6 +13,6 @@ public class Bullet : MonoBehaviour
     {
         //Vector2 vc2 = new Vector2 (PlayerCon.moveDir.x, 0);
         rb = GetComponent<Rigidbody2D>();
-        rb.AddForce(vc2 * speed);
+        //rb.AddForce(vc2 * speed);
     }
 }
