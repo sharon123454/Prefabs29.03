@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &152477491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 152477492}
+  m_Layer: 0
+  m_Name: Shooting Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &152477492
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152477491}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.23, y: 4.55, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 333950055}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &333950053
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,7 +163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 333950055}
-  - component: {fileID: 333950054}
+  - component: {fileID: 333950056}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -140,19 +171,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &333950054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 333950053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2f2b7ef7f1ea4041b986015179a6ea2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!4 &333950055
 Transform:
   m_ObjectHideFlags: 0
@@ -166,9 +184,25 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1380738233}
+  - {fileID: 152477492}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &333950056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333950053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2f2b7ef7f1ea4041b986015179a6ea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  bulletPref: {fileID: 5885045696128272087, guid: b6402d4dc56b7924393179c15830b9a6, type: 3}
+  shootingPoint: {fileID: 152477492}
 --- !u!1 &356655665
 GameObject:
   m_ObjectHideFlags: 0
