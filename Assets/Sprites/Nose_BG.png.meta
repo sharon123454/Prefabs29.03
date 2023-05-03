@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a00520b5469c24a459b1549001b4fea5
+guid: 391071530c522f94bb6aadf48eb48f6f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -127,91 +127,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: SNOT_0
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 197
-        width: 93
-        height: 71
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f4a27ff5e920b1438a310f80ef4db6e
-      internalID: -866479173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SNOT_1
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 216
-        width: 62
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30a1210165e4b3c4ba8d3d55b40a3b03
-      internalID: 323892053
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SNOT_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 46
-        width: 70
-        height: 39
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87261312bc36f544288bce6beee68f53
-      internalID: 1420096607
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SNOT_5
-      rect:
-        serializedVersion: 2
-        x: 230
-        y: 19
-        width: 95
-        height: 90
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e36ee0cac647dcc449e7908efc8753cb
-      internalID: -1836453999
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -222,15 +138,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      SNOT_0: -866479173
-      SNOT_1: 323892053
-      SNOT_2: -460788154
-      SNOT_3: -1885016311
-      SNOT_4: 1420096607
-      SNOT_5: -1836453999
-      SNOT_6: -486435326
-      SNOT_7: -53399841
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -21,15 +21,22 @@ public class Bullet : MonoBehaviour
 
     public void bulletAddforce(Vector2 vc2)
     {
-        if (vc2 != Vector2.zero)
-            vector2 = vc2;
-
         timer = timeTillDeath;
 
         if (vc2.normalized.x > 0)
+        {
             transform.rotation = flipped;
+            vector2 = vc2;
+        }
         else if (vc2.normalized.x < 0)
+        {
             transform.rotation = regular;
+            vector2 = vc2;
+        }
+        else
+        {
+            vector2 = Vector2.right;
+        }
     }
 
     private void Update()

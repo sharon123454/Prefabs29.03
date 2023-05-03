@@ -29,8 +29,9 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             var tempBullet = Instantiate(bulletPref, shootingPoint.position, transform.rotation);
-            tempBullet.bulletAddforce(moveDir);
+            tempBullet.bulletAddforce(moveDir.normalized);
             skeletonAnimation.AnimationName = "ATTACK";
+            print("attack pressed");
             StopCoroutine(ChangeToIdle());
             StartCoroutine(ChangeToIdle());
         }
@@ -52,9 +53,17 @@ public class PlayerController : MonoBehaviour
         if (horizontalInput > 0)
         {
             transform.rotation = flipped;
+            skeletonAnimation.AnimationName = "WALK";
         }
         else if (horizontalInput < 0)
+        {
             transform.rotation = regular;
+            skeletonAnimation.AnimationName = "WALK";
+        }
+        //else
+            //skeletonAnimation.AnimationName = "IDLE";
+
+
     }
 
     void PlayerInput()
