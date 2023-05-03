@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     public Bullet bulletPref;
     public Transform shootingPoint;
     private Vector3 moveDir;
+    private Quaternion flipped = new Quaternion(0, 180, 0, 0);
+    private Quaternion regular = new Quaternion(0, 0, 0, 0);
 
 
     private void Update()
@@ -28,6 +30,13 @@ public class PlayerController : MonoBehaviour
         moveDir = new Vector3(horizontalInput, 0);
         Debug.Log(moveDir);
         transform.position += moveDir * speed * Time.deltaTime;
+
+        if (horizontalInput > 0)
+        {
+            transform.rotation = flipped;
+        }
+        else
+            transform.rotation = regular;
     }
 
     void PlayerInput()
