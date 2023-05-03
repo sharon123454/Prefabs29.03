@@ -7,7 +7,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float speed = 10;
     
     float horizontalInput;
-
+    public Bullet bulletPref;
+    public Transform shootingPoint;
     private Vector3 moveDir;
 
 
@@ -15,6 +16,11 @@ public class PlayerController : MonoBehaviour
     {
         PlayerInput();
         PlayerMovement();
+        if (Input.GetMouseButtonDown(0))
+        {
+            var tempBullet = Instantiate(bulletPref, shootingPoint.position, transform.rotation);
+            tempBullet.bulletAddforce(moveDir);
+        }
     }
 
     void PlayerMovement()
